@@ -1,0 +1,139 @@
+//-------------------------------------------
+.header {
+    //background-color: white;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    // .header__logo
+    
+    &__logo {
+        margin-right: 284.31px;
+    }
+
+    // .header__menu
+
+    //&__menu {
+    //    
+    //}
+}
+.container {
+    width: $contWidth;
+    margin: 0px auto;
+    height: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.active {
+    font-weight: bold;
+}
+.menu {
+    // .menu__list
+    &__list {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+    }
+
+    // .menu__item
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+    // .menu__link
+
+    &__link {
+        text-decoration: none;
+        color:$dark_shade50;
+        padding-left: 0.5px;
+    }
+    &__more {
+        background: url(../img/icons/expand_more.svg) no-repeat center;
+        width: 24px;
+        height: 21px;
+        
+        padding-right: 24px;
+        
+    }
+}
+
+.button {
+    padding-left:20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    &__text {
+        border: 2px solid ;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-image-slice: 1;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding: 8px 18px 8px 18px;
+        border-radius:22px;
+        /*border-image-slice: 100;
+        border-image-width:2px;
+        border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) ;*/
+    }
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.coupons {
+    position: relative;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 15px;
+  }
+  .btn {
+    
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 18px;
+    border-radius: 22px;
+    background-color: white; 
+    color:$purple;
+    text-decoration: none;
+    &:hover{
+        &::before{
+            opacity: 0.5;
+        }
+    }
+  }
+  .btn::before {
+    transition-duration: 0.4s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    
+  }
+  
+  .btn--orange {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color:white;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    &:hover{
+        opacity: 0.5;
+    }
+  }
+  .btn--orange::before {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+  }
+//-------------------------------------------
