@@ -2,59 +2,67 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 //Цвета
-$dark_shade100 : #1F2041;
-$dark_shade75 : rgba(31, 32, 65, 0.75);
-$dark_shade50 : rgba(31, 32, 65, 0.5);
-$dark_shade25 : rgba(31, 32, 65, 0.25);
-$dark_shade5 : rgba(31, 32, 65, 0.05);
-$purple: #BC9CFF;
-$green: #6FCF97;
+$dark_shade100: #1f2041;
+$dark_shade75: rgba(31, 32, 65, 0.75);
+$dark_shade50: rgba(31, 32, 65, 0.5);
+$dark_shade25: rgba(31, 32, 65, 0.25);
+$dark_shade5: rgba(31, 32, 65, 0.05);
+$purple: #bc9cff;
+$green: #6fcf97;
 //---------------------
 $minWidth: 320;
 $maxWidth: 1440;
-$contWidth: 1160;
-
+$maxWidthCont: 1160;
+$contPadding: 30;
 
 //---------------------
 
-body{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
 }
 
-h1{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color:$dark_shade100;
+h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: $dark_shade100;
 }
 
-h2{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
-  color:$dark_shade100;
+h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 23px;
+	color: $dark_shade100;
 }
 
-h3{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color:$dark_shade100;
+h3 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: $dark_shade100;
 }
-
+.container {
+	max-width: $maxWidthCont;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
 @import "_header";
 @import "_test";
