@@ -1,23 +1,28 @@
 
-<html> 
+<html lang="ru">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>Toxin</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="fonts/icomoon.ttf"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </head>
-  <body><header class="header">
+  <body>
+    <header class="header">
 	<div class="header__container">
 		<a href="" class="header__logo"><img src="../img/icons/logo.svg" alt="Toxin"></a>
 		<nav class="header__menu menu">
 			<ul class="menu__list">
 				<li class="menu__item">
-					<a href="" class="menu__link active">О нас</a>
+					<a href="" class="menu__link active ">О нас</a>
 				</li>
 				<li class="menu__item">
-					<a href="" class="menu__link">Услуги</a>
+					<a href="" class="menu__link dropdown-header">Услуги
+						<div class="dropdown-header__content">123</div>
+					</a>
 				</li>
 				<li class="menu__item">
 					<a href="" class="menu__link">Вакансии</a>
@@ -26,12 +31,66 @@
 					<a href="" class="menu__link">Новости</a>
 				</li>
 				<li class="menu__item">
-					<a href="" class="menu__link">Соглашения</a>
+					<a href="" class="menu__link dropdown-header">Соглашения
+						<div class="dropdown-header__content">123</div>
+					</a>
 				</li>
+				<!-- <li class="menu__item">
+					<a href="" class="menu__link account">Юлий Цезарь</a>
+				</li> -->
 			</ul>
 		</nav>
+		<a href="" class="button button_type1">Войти</a>
+		<a href="" class="button button_type2">Зарегистрироваться</a>
 	</div>
-</header>
-    <!--include src/test.htm-->
+</header><div class="wrapper">
+	<div class="main">
+		<h1>text field</h1>
+		<input class='text-field' id="email" type='text' placeholder='Email'>
+		<h1>masked text field</h1>
+		<input class='text-field masked' id='date' type='text' placeholder='ДД.ММ.ГГГГ'>
+		<h1>checkbox buttons</h1>
+		<div>
+			<input type="checkbox" class="custom custom__checkbox" id="cb1"> <label for="cb1">Можно курить</label>
+		</div>
+		<div>
+			<input type="checkbox" class="custom custom__checkbox" id="cb2"> <label for="cb2">Можно с питомцами</label>
+		</div>
+		<div>
+			<input type="checkbox" class="custom custom__checkbox" id="cb3"> <label for="cb3">Можно пригласить
+				гостей</label>
+		</div>
+		<h1>radio buttons</h1>
+		<div>
+			<input type="radio" class="custom custom__radio" name="rb" id="rb1" checked> <label for="rb1">Мужчина</label>
+			<input type="radio" class="custom custom__radio" name="rb" id="rb2"> <label for="rb2">Женщина</label>
+		</div>
+		<h1>toggle button</h1>
+		<div>
+			<input type="checkbox" class="custom custom__toggle" id="tb1"> <label for="tb1">Получать
+				спецпредложения</label>
+		</div>
+		<h1>dropdown</h1>
+		123
+		<h1>buttons</h1>
+		<div class="coupons">
+			<a href="#" class="btn">click me</a>
+			<a href="#" class="btn btn--orange">click me</a>
+			<a href="#" class="btn__link">click me</a>
+		</div>
+	</div>
+</div><footer class="footer">
+	<div class="footer__wrapper">
+		<div class="footer__container">
+
+		</div>
+	</div>
+	<div class="footer__container copyright">
+		Copyright © 2018 Toxin отель. Все права защищены.
+		<div class="copyright__icons">
+
+		</div>
+	</div>
+</footer>
   </body>
 </html>

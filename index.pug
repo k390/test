@@ -1,12 +1,15 @@
-html 
-    head
-        meta(charset='UTF-8')
-        title Toxin
-        link(rel='stylesheet' href='css/style.css')
-        script(src = "js/jquery.min.js")
-        script(src = "js/jquery.maskedinput.min.js")
-        script(src = "js/script.js")
-		  meta(name = "viewport" content = "width=device-width")
-    body
-        include src/header.htm
-        //include src/test.htm
+html(lang = "ru")
+	head
+		meta(charset='UTF-8')
+		meta(name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		title Toxin
+		link(rel='stylesheet' href='css/style.css')
+		link(rel='stylesheet' href='fonts/icomoon.ttf')
+		script(src = "js/jquery.min.js")
+		script(src = "js/jquery.maskedinput.min.js")
+		script(src = "js/script.js")
+	body
+		include src/header.htm
+
+		include src/test.htm
+		include src/footer.htm
